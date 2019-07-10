@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "091a6984-2626-4e37-ac95-6f93db134313",
+		"name": "ExamenSegundoParcial",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/api/incidentes post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "descripcion",
+							"value": "Un Usuario",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": " Incidente",
+							"type": "text"
+						},
+						{
+							"key": "estado",
+							"value": "Registrado",
+							"type": "text"
+						},
+						{
+							"key": "usuarioRegistra",
+							"value": "maria",
+							"type": "text"
+						},
+						{
+							"key": "usuarioAsignado",
+							"value": "maria2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/incidentes",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"incidentes"
+					]
+				},
+				"description": "POST"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/incidentes GET ALL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/incidentes",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"incidentes"
+					]
+				},
+				"description": "GET ALL"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/incidentes/5d253a43dad776291cf990a5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/incidentes/5d253a43dad776291cf990a5",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"incidentes",
+						"5d253a43dad776291cf990a5"
+					]
+				},
+				"description": "GET BY ID"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/incidentes/5d253a43dad776291cf990a5",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/incidentes/5d253a43dad776291cf990a5",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"incidentes",
+						"5d253a43dad776291cf990a5"
+					]
+				},
+				"description": "DELETE"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/incidentes/close/5d253a6ddad776291cf990a6",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/incidentes/close/5d253a6ddad776291cf990a6",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"incidentes",
+						"close",
+						"5d253a6ddad776291cf990a6"
+					]
+				},
+				"description": "UPDATE"
+			},
+			"response": []
+		}
+	]
+}
